@@ -5,45 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YALL - AI & Secure Software Consulting</title>
   <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #333;
+      --card: #ffffff;
+      --subtle: #666;
+      --footer: #999;
+      --link: #0066cc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #c9d1d9;
+        --card: #161b22;
+        --subtle: #8b949e;
+        --footer: #6e7681;
+        --link: #58a6ff;
+      }
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--text);
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 2rem;
     }
+
     header {
       max-width: 800px;
       text-align: center;
       margin-bottom: 2rem;
     }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
+
     h2 {
       font-weight: normal;
-      color: #666;
+      color: var(--subtle);
       margin-bottom: 2rem;
     }
+
     section {
       max-width: 700px;
-      background: white;
+      background: var(--card);
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
+
     footer {
-      color: #999;
+      color: var(--footer);
       font-size: 0.9rem;
     }
+
     a {
-      color: #0066cc;
+      color: var(--link);
     }
+
     h3 {
       margin-top: 0;
     }
